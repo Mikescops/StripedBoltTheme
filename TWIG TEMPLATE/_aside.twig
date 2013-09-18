@@ -1,0 +1,45 @@
+                    <div id="sidebar">
+                    
+                        <!-- Logo -->
+                            <div id="logo">
+                                <h1>{{ app.config.get('general/sitename') }}</h1>
+                            </div>
+                    
+                        <!-- Nav -->
+                            <nav id="nav">
+                                <ul>
+                        {{ menu('main', '_sub_menu.twig') }}
+                                </ul>
+                            </nav>
+
+                        <!-- Search -->
+                            <section class="is-search">
+                                <form method="post" action="#">
+                                    <input type="text" class="text" name="search" placeholder="Search" />
+                                </form>
+                            </section>
+                    
+                        <!-- Recent Posts -->
+                            <section class="is-recent-posts">
+                                <header>
+                                    <h2>Recent Posts</h2>
+                                </header>
+                                <ul>
+                                        {% setcontent records = "entries/latest/8" allowpaging %}
+                                        {% for record in records %}
+                                    <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+                                        {% endfor %}
+                                </ul>
+                            </section>
+                    
+                       
+                        <!-- Copyright -->
+                            <div id="copyright">
+                                <p>
+                                    &copy; 2014 {{ app.config.get('general/sitename') }}<br />
+                                    Design: <a href="http://html5up.net/">HTML5 UP</a><br />
+                                    Theme: <a href="http://pixelswap.fr/">PIXELSWAP</a>
+                                </p>
+                            </div>
+
+                    </div>
