@@ -1,4 +1,4 @@
-STRIPED BOLT THEME BY MIKE SCOPS
+STRIPED BOLT THEME BY MIKE SCOPS // Work in Progress !
 pixelswap.fr | @MikeScops
 Free for personal and commercial use under the CCA 3.0 license
 
@@ -15,7 +15,7 @@ Theme Installation :
 
 2/ Set your path theme in the config.yml (you can do it from the bolt admin interface)
 
-3/ And voil‡ !
+3/ And voil√† !
 
 
 NOTE FROM AUTHOR :
